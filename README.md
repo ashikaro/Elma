@@ -2,17 +2,17 @@
     PELMA - Python Event Loop Manager
 
 # Project Goals
+   * In this project, i will implement a fully functioning Event Loop Manager(ELMA)      Library in python. 
+   * Python applications can leverage ELMA interface to develop embedded applications    and specifically for running event loops.
+   * We will use events for Interprocess communication.
 
-    In this project, i will implement a fully functioning Event Loop Manager(ELMA) Library in python. Python applications can leverage ELMA interface to develop embedded applications and specifically for running event loops.
-    We will use events for Interprocess communication.
+   I will consider this project to be successful if:
+   * A Python client can use this library to define processes.
+   * A Python client can use this library to schedule processes to run at a certain      frequency.
+   * A Python client use this library communicate between processes via events.
+   * A Python client can build a Finite State Machine using PELMA library.
 
-    I will consider this project to be successful if:
-   1. A Python client can use this library to define processes.
-   1. A Python client can use this library to schedule processes to run at a certain      frequency.
-   1. A Python client use this library communicate between processes via events.
-   1. A Python client can build a Finite State Machine using PELMA library.
-
-    We will build a simple test robot finite state machine using the PELMA library.
+   We will build a simple test robot finite state machine using the PELMA library.
 
 # Resources
    * Pluralsight course Python Fundamentals
