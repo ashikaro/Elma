@@ -1,31 +1,32 @@
 from elma.api.state_machine import StateMachine
 from elma.api.state import State
-
+## A class to represent different states of the Robot.
 class RobotState(State):
 
     def __init__(self, name):
         if name:
             super().__init__(name)
 
-    #! A method that derived instances should define. It is called when the state is
-    #! entered by the state machine either when the machine starts or when a transition
-    #! to the state is fired.
-    #! \param e The event that led to the transition into the state
+    ## A method that derived instances should define. It is called when the state is
+    # entered by the state machine either when the machine starts or when a transition
+    # to the state is fired.
+    # \param e The event that led to the transition into the state
     def entry(self, event):
         print("calling entry method of {}".format(self.name()))
 
-    #! A method that derived instances should define. It is called repeatedly by the
-    #! update() method of the containing StateMachine when the state is active.
+    ## A method that derived instances should define. It is called repeatedly by the
+    # update() method of the containing StateMachine when the state is active.
     def during(self):
         print("calling during method of {}".format(self.name()))
 
-    #! A method that derived instances should define. It is called just before the state is
-    #! exited by the state machine when a transition
-    #! from the state is fired.
-    #! \param e The event that led to the transition out of the state
+    # A method that derived instances should define. It is called just before the state is
+    # exited by the state machine when a transition
+    # from the state is fired.
+    # \param e The event that led to the transition out of the state
     def exit(self, event):
         print("calling exit method of {}".format(self.name()))
 
+## A class for Robot which inherits from StateMachine.
 
 class Robot(StateMachine):
 

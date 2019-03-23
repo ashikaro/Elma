@@ -1,3 +1,5 @@
+## A class which represents a State in the Finite State Machine.
+
 class State:
 
     _id_counter = 0
@@ -15,30 +17,30 @@ class State:
          else:
              self._state_machine.emit(event)
 
-    #! \return The name of the state
+    ## \return The name of the state
     def name(self):
         return self._name
 
-    #! \return The id of the state
+    ## \return The id of the state
     def id(self):
         return self._id
 
-    #! A method that derived instances should define. It is called when the state is
-    #! entered by the state machine either when the machine starts or when a transition
-    #! to the state is fired.
-    #! \param e The event that led to the transition into the state
+    ## A method that derived instances should define. It is called when the state is
+    # entered by the state machine either when the machine starts or when a transition
+    # to the state is fired.
+    # \param e The event that led to the transition into the state
     def entry(self, event):
         raise NotImplementedError("Must override entry in derived classes")
 
-    #! A method that derived instances should define. It is called repeatedly by the
-    #! update() method of the containing StateMachine when the state is active.
+    ## A method that derived instances should define. It is called repeatedly by the
+    # update() method of the containing StateMachine when the state is active.
     def during(self, event):
         raise NotImplementedError("Must override during in derived classes")
 
-    #! A method that derived instances should define. It is called just before the state is
-    #! exited by the state machine when a transition
-    #! from the state is fired.
-    #! \param e The event that led to the transition out of the state
+    ## A method that derived instances should define. It is called just before the state is
+    # exited by the state machine when a transition
+    # from the state is fired.
+    # \param e The event that led to the transition out of the state
     def exit(self, event):
         raise NotImplementedError("Must override exit in derived classes")
 

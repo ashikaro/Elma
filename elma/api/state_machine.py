@@ -2,7 +2,8 @@ from elma.api.process import Process
 from elma.api.transition import Transition
 from elma.api.event import Event
 
-
+## A class for StateMachine inherits from the Process class
+# which sets up the transitions for events.
 class StateMachine(Process):
     def __init__(self, name="unnamed state machine"):
         super().__init__(name)

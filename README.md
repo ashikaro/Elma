@@ -1,6 +1,6 @@
 PELMA
 ===
-[PELMA](https://github.com/ashikaro/Elma) is a python event loop manager which can be used by embedded and reactive systems application in Python.
+[PELMA](https://github.com/ashikaro/Elma) is a python event loop manager which can be used by embedded and reactive systems applications in Python.
 
 The source code for this project is available here [github](https://github.com/ashikaro/Elma).
 

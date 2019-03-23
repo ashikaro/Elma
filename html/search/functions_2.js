@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['propagate',['propagate',['../classelma_1_1api_1_1event_1_1Event.html#a5912a8957bf49373f95a5646c861a905',1,'elma::api::event::Event']]]
+  ['during',['during',['../classelma_1_1api_1_1robot_1_1RobotState.html#afc16183bb851de813f3269937c2360a6',1,'elma.api.robot.RobotState.during()'],['../classelma_1_1api_1_1state_1_1State.html#a67235fad4e69aa8c21ec26eae249e01d',1,'elma.api.state.State.during()']]]
 ];

@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 
-    #! The Process Manager class.
+## The Manager class which manages the processes.
 class Manager:
     def __init__(self):
         self.event_handlers = dict()
@@ -13,17 +13,17 @@ class Manager:
         process._manager = self
 
 
-    #! Getter
-    #! \return The time the Manager was most recently started
+    ## Getter
+    # return The time the Manager was most recently started
     def start_time(self):
         return self._start_time
 
-    #! Getter
-    #! \return The  duration of time since the manager was most recently started
+    ## Getter
+    # \return The  duration of time since the manager was most recently started
     def elapsed(self):
         return self._elapsed
 
-    # Event Interface
+    ## Event Interface
     def watch(self, event_name, handler):
         if event_name in self.event_handlers:
             handlers = self.event_handlers[event_name]
@@ -34,18 +34,17 @@ class Manager:
         self.event_handlers[event_name] = handlers
 
 
-    #! Emit an event associated with a name.
-    #! Typically, a process would emit events in its update() method using something like
-    #! the following code"
-    #! @code
-    #!     emit(Event("name", value));
-    #! @endcode
-    #! where value is any jsonable value. For example, you can write
-    #! @code
-    #!     emit(Event("velocity", 3.41));
-    #! @endcode
-    #! \param event The Event to be emitted
-    #! \return A reference to the manager for chaining.
+    ## Emit an event associated with a name.
+    # Typically, a process would emit events in its update() method using something like
+    # the following code"
+    # @code
+    #     emit(Event("name", value));
+    # @endcode
+    # where value is any jsonable value. For example, you can write
+    # @code
+    #     emit(Event("velocity", 3.41));
+    # @endcode
+    # @param event The Event to be emitted
     def emit(self, event):
         e = event
         print('emitting event {}'.format(event.name()))
@@ -54,47 +53,40 @@ class Manager:
                 if e.propagate():
                     handler(e)
 
-    #! Apply a function to all processes.
-    #! \param f The function to apply. It should take a reference to a process and return void.
-    #! \return A reference to the manager, for chaining
+    ## Apply a function to all processes.
+    # @param f The function to apply. It should take a reference to a process and return void.
     def all(self, f):
         for process in self._processes:
             print(process)
             f(process)
 
-    #! Initialize all processes. Usually called before run()
-    #! \return A reference to the manager, for chaining
+    ## Initialize all processes. Usually called before run()
     def init(self):
         func = lambda p: p._init()
         self.all(func)
 
-    #! Start all processes. Usually not called directly.
-    #! \return A reference to the manager, for chaining
+    ## Start all processes. Usually not called directly.
     def start(self):
         func = lambda p: p._start(self._elapsed)
         self.all(func)
 
-    #! Stop all processes. Usually not called directly.
-    #! \return A reference to the manager, for chaining
+    ## Stop all processes. Usually not called directly.
     def stop(self):
         func = lambda p: p._stop(self._elapsed)
         self.all(func)
 
-    #! Update all processes if enough time has passed. Usually not called directly.
-    #! \return A reference to the manager, for chaining
+    ## Update all processes if enough time has passed. Usually not called directly.
     def update(self):
         self.all(self._update)
 
-    #! Update all processes if enough time has passed. Usually not called directly.
-    #! \return A reference to the manager, for chaining
+    ## Update all processes if enough time has passed. Usually not called directly.
     def _update(self, p):
 
         if self._elapsed > (p.last_update() + p.period()):
             p._update(self._elapsed)
 
-    #! Run the manager for the specified amount of time.
-    #! \param The desired amount of time to run
-    #! \return A reference to the manager, for chaining
+    ## Run the manager for the specified amount of time.
+    # @param The desired amount of time to run
     def run(self, runtime):
         self._start_time = datetime.now()
         self._elapsed = timedelta(0)

@@ -4,6 +4,7 @@ from elma.api.event import Event
 from elma.test.test_process import TestProcess
 from elma.api.robot import Robot
 
+## A test class for testing ELMA APIs and Robot FSM
 class TestElma(unittest.TestCase):
 
    def test_process(self):

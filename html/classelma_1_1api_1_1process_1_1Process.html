@@ -23,7 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PELMA
    </div>
-   <div id="projectbrief">AfullyfunctioningEventLoopManager(ELMA)LibraryinPython.</div>
+   <div id="projectbrief">A fully functioning Event Loop Manager(ELMA) Library in Python.</div>
   </td>
  </tr>
  </tbody>
@@ -71,22 +71,25 @@ $(function() {
 <div class="title">elma.api.process.Process Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>abstract base class  
+ <a href="classelma_1_1api_1_1process_1_1Process.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for elma.api.process.Process:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classelma_1_1api_1_1process_1_1Process.png" usemap="#elma.api.process.Process_map" alt=""/>
   <map id="elma.api.process.Process_map" name="elma.api.process.Process_map">
-<area href="classelma_1_1api_1_1state__machine_1_1StateMachine.html" alt="elma.api.state_machine.StateMachine" shape="rect" coords="0,56,224,80"/>
+<area href="classelma_1_1api_1_1state__machine_1_1StateMachine.html" title="A class for StateMachine inherits from the Process class which sets up the transitions for events..." alt="elma.api.state_machine.StateMachine" shape="rect" coords="0,56,224,80"/>
 <area href="classelma_1_1test_1_1test__process_1_1TestProcess.html" title="This is a test process class inheriting the Process class to test the working of the ELMA process API..." alt="elma.test.test_process.TestProcess" shape="rect" coords="234,56,458,80"/>
-<area href="classelma_1_1api_1_1robot_1_1Robot.html" alt="elma.api.robot.Robot" shape="rect" coords="0,112,224,136"/>
+<area href="classelma_1_1api_1_1robot_1_1Robot.html" title="A class for Robot which inherits from StateMachine. " alt="elma.api.robot.Robot" shape="rect" coords="0,112,224,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a539964a64e16cc8bc42e15124df35e"><td class="memItemLeft" align="right" valign="top"><a id="a7a539964a64e16cc8bc42e15124df35e"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, name=None, status=None, manager=None)</td></tr>
+<tr class="memitem:a7a539964a64e16cc8bc42e15124df35e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelma_1_1api_1_1process_1_1Process.html#a7a539964a64e16cc8bc42e15124df35e">__init__</a> (self, <a class="el" href="classelma_1_1api_1_1process_1_1Process.html#affa061fab12e699d4d04471bfaf52a1a">name</a>=None, <a class="el" href="classelma_1_1api_1_1process_1_1Process.html#a6dc2725cd3d032b3ec80e0fc6c52a994">status</a>=None, manager=None)</td></tr>
+<tr class="memdesc:a7a539964a64e16cc8bc42e15124df35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of the process, as managed by a Manager.  <a href="#a7a539964a64e16cc8bc42e15124df35e">More...</a><br /></td></tr>
 <tr class="separator:a7a539964a64e16cc8bc42e15124df35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c3be5718b17eac25b42779ea368793"><td class="memItemLeft" align="right" valign="top"><a id="a04c3be5718b17eac25b42779ea368793"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (self)</td></tr>
@@ -100,29 +103,29 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (self)</td>
 <tr class="memitem:a2751375eb541bb0dae8211d4b692b4fc"><td class="memItemLeft" align="right" valign="top"><a id="a2751375eb541bb0dae8211d4b692b4fc"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (self)</td></tr>
 <tr class="separator:a2751375eb541bb0dae8211d4b692b4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e37ba949b3285fe52ca8638cdcb0bb9"><td class="memItemLeft" align="right" valign="top"><a id="a8e37ba949b3285fe52ca8638cdcb0bb9"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>period</b> (self)</td></tr>
+<tr class="memitem:a8e37ba949b3285fe52ca8638cdcb0bb9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelma_1_1api_1_1process_1_1Process.html#a8e37ba949b3285fe52ca8638cdcb0bb9">period</a> (self)</td></tr>
+<tr class="memdesc:a8e37ba949b3285fe52ca8638cdcb0bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="#a8e37ba949b3285fe52ca8638cdcb0bb9">More...</a><br /></td></tr>
 <tr class="separator:a8e37ba949b3285fe52ca8638cdcb0bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dc2725cd3d032b3ec80e0fc6c52a994"><td class="memItemLeft" align="right" valign="top"><a id="a6dc2725cd3d032b3ec80e0fc6c52a994"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>status</b> (self)</td></tr>
+<tr class="memitem:a6dc2725cd3d032b3ec80e0fc6c52a994"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelma_1_1api_1_1process_1_1Process.html#a6dc2725cd3d032b3ec80e0fc6c52a994">status</a> (self)</td></tr>
+<tr class="memdesc:a6dc2725cd3d032b3ec80e0fc6c52a994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="#a6dc2725cd3d032b3ec80e0fc6c52a994">More...</a><br /></td></tr>
 <tr class="separator:a6dc2725cd3d032b3ec80e0fc6c52a994"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affa061fab12e699d4d04471bfaf52a1a"><td class="memItemLeft" align="right" valign="top"><a id="affa061fab12e699d4d04471bfaf52a1a"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (self)</td></tr>
+<tr class="memitem:affa061fab12e699d4d04471bfaf52a1a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelma_1_1api_1_1process_1_1Process.html#affa061fab12e699d4d04471bfaf52a1a">name</a> (self)</td></tr>
+<tr class="memdesc:affa061fab12e699d4d04471bfaf52a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="#affa061fab12e699d4d04471bfaf52a1a">More...</a><br /></td></tr>
 <tr class="separator:affa061fab12e699d4d04471bfaf52a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0a58ddb9103ec226c42892e5a3d2c3f"><td class="memItemLeft" align="right" valign="top"><a id="ad0a58ddb9103ec226c42892e5a3d2c3f"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>num_updates</b> (self)</td></tr>
+<tr class="memitem:ad0a58ddb9103ec226c42892e5a3d2c3f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelma_1_1api_1_1process_1_1Process.html#ad0a58ddb9103ec226c42892e5a3d2c3f">num_updates</a> (self)</td></tr>
+<tr class="memdesc:ad0a58ddb9103ec226c42892e5a3d2c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="#ad0a58ddb9103ec226c42892e5a3d2c3f">More...</a><br /></td></tr>
 <tr class="separator:ad0a58ddb9103ec226c42892e5a3d2c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa37c2ece596b3580990332709564345f"><td class="memItemLeft" align="right" valign="top"><a id="aa37c2ece596b3580990332709564345f"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>start_time</b> (self)</td></tr>
+<tr class="memitem:aa37c2ece596b3580990332709564345f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelma_1_1api_1_1process_1_1Process.html#aa37c2ece596b3580990332709564345f">start_time</a> (self)</td></tr>
+<tr class="memdesc:aa37c2ece596b3580990332709564345f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="#aa37c2ece596b3580990332709564345f">More...</a><br /></td></tr>
 <tr class="separator:aa37c2ece596b3580990332709564345f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef00f41f3c8bab2b49329d05ce83f534"><td class="memItemLeft" align="right" valign="top"><a id="aef00f41f3c8bab2b49329d05ce83f534"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>last_update</b> (self)</td></tr>
+<tr class="memitem:aef00f41f3c8bab2b49329d05ce83f534"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelma_1_1api_1_1process_1_1Process.html#aef00f41f3c8bab2b49329d05ce83f534">last_update</a> (self)</td></tr>
+<tr class="memdesc:aef00f41f3c8bab2b49329d05ce83f534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="#aef00f41f3c8bab2b49329d05ce83f534">More...</a><br /></td></tr>
 <tr class="separator:aef00f41f3c8bab2b49329d05ce83f534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47488e16165e28243766c7a6f5a51e32"><td class="memItemLeft" align="right" valign="top"><a id="a47488e16165e28243766c7a6f5a51e32"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>previous_update</b> (self)</td></tr>
+<tr class="memitem:a47488e16165e28243766c7a6f5a51e32"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelma_1_1api_1_1process_1_1Process.html#a47488e16165e28243766c7a6f5a51e32">previous_update</a> (self)</td></tr>
+<tr class="memdesc:a47488e16165e28243766c7a6f5a51e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="#a47488e16165e28243766c7a6f5a51e32">More...</a><br /></td></tr>
 <tr class="separator:a47488e16165e28243766c7a6f5a51e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c2b15f6f42435a532aafd62631cc1d"><td class="memItemLeft" align="right" valign="top"><a id="a65c2b15f6f42435a532aafd62631cc1d"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>milli_time</b> (self)</td></tr>
+<tr class="memitem:a65c2b15f6f42435a532aafd62631cc1d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelma_1_1api_1_1process_1_1Process.html#a65c2b15f6f42435a532aafd62631cc1d">milli_time</a> (self)</td></tr>
+<tr class="memdesc:a65c2b15f6f42435a532aafd62631cc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time since the last update in millisconds, as a double.  <a href="#a65c2b15f6f42435a532aafd62631cc1d">More...</a><br /></td></tr>
 <tr class="separator:a65c2b15f6f42435a532aafd62631cc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe3f746bdaa56b1166e37c6622e93f9"><td class="memItemLeft" align="right" valign="top"><a id="abbe3f746bdaa56b1166e37c6622e93f9"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>diff_count</b> (self)</td></tr>
@@ -140,6 +143,221 @@ Public Attributes</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>diff_count</b></td></tr>
 <tr class="separator:a37f72d81499fbbf8a3beaeff06d62202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>abstract base class </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7a539964a64e16cc8bc42e15124df35e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a539964a64e16cc8bc42e15124df35e">&#9670;&nbsp;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def elma.api.process.Process.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>name</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>status</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>manager</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status of the process, as managed by a Manager. </p>
+<p>Get the status using the <a class="el" href="classelma_1_1api_1_1process_1_1Process.html#a6dc2725cd3d032b3ec80e0fc6c52a994" title="Getter. ">status()</a> getter. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aef00f41f3c8bab2b49329d05ce83f534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef00f41f3c8bab2b49329d05ce83f534">&#9670;&nbsp;</a></span>last_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def elma.api.process.Process.last_update </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The duration of time between the start time and the most recent time the Manager called the update() method. </dd></dl>
+
+</div>
+</div>
+<a id="a65c2b15f6f42435a532aafd62631cc1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65c2b15f6f42435a532aafd62631cc1d">&#9670;&nbsp;</a></span>milli_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def elma.api.process.Process.milli_time </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The time since the last update in millisconds, as a double. </p>
+<p>return The time since the last update, in milliseconds </p>
+
+</div>
+</div>
+<a id="affa061fab12e699d4d04471bfaf52a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa061fab12e699d4d04471bfaf52a1a">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def elma.api.process.Process.name </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The name of the process. </dd></dl>
+
+</div>
+</div>
+<a id="ad0a58ddb9103ec226c42892e5a3d2c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0a58ddb9103ec226c42892e5a3d2c3f">&#9670;&nbsp;</a></span>num_updates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def elma.api.process.Process.num_updates </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of updates since the process was last started by the Manager. </dd></dl>
+
+</div>
+</div>
+<a id="a8e37ba949b3285fe52ca8638cdcb0bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e37ba949b3285fe52ca8638cdcb0bb9">&#9670;&nbsp;</a></span>period()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def elma.api.process.Process.period </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The period of the process. </dd></dl>
+
+</div>
+</div>
+<a id="a47488e16165e28243766c7a6f5a51e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47488e16165e28243766c7a6f5a51e32">&#9670;&nbsp;</a></span>previous_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def elma.api.process.Process.previous_update </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The duration of time between the start time and the second most recent time the Manager called the update() method. </dd></dl>
+
+</div>
+</div>
+<a id="aa37c2ece596b3580990332709564345f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37c2ece596b3580990332709564345f">&#9670;&nbsp;</a></span>start_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def elma.api.process.Process.start_time </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The time the process was last started by the Manager. </dd></dl>
+
+</div>
+</div>
+<a id="a6dc2725cd3d032b3ec80e0fc6c52a994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc2725cd3d032b3ec80e0fc6c52a994">&#9670;&nbsp;</a></span>status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def elma.api.process.Process.status </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The status of the process. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>elma/api/process.py</li>
 </ul>

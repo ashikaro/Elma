@@ -1,5 +1,10 @@
 \hypertarget{classelma_1_1api_1_1manager_1_1Manager}{}\section{elma.\+api.\+manager.\+Manager Class Reference}
 \label{classelma_1_1api_1_1manager_1_1Manager}\index{elma.\+api.\+manager.\+Manager@{elma.\+api.\+manager.\+Manager}}
+
+
+The \hyperlink{classelma_1_1api_1_1manager_1_1Manager}{Manager} class which manages the processes.  
+
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -10,35 +15,27 @@ def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
 def {\bfseries schedule} (self, process, period)
 \item 
 \mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_adfd5bd95cca1ebfba742319c1d01e4e2}\label{classelma_1_1api_1_1manager_1_1Manager_adfd5bd95cca1ebfba742319c1d01e4e2}} 
-def {\bfseries start\+\_\+time} (self)
-\item 
-\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_ad26dad0553c0e6936acbedba79b38bda}\label{classelma_1_1api_1_1manager_1_1Manager_ad26dad0553c0e6936acbedba79b38bda}} 
-def {\bfseries elapsed} (self)
-\item 
+def \hyperlink{classelma_1_1api_1_1manager_1_1Manager_adfd5bd95cca1ebfba742319c1d01e4e2}{start\+\_\+time} (self)
+\begin{DoxyCompactList}\small\item\em Getter return The time the \hyperlink{classelma_1_1api_1_1manager_1_1Manager}{Manager} was most recently started. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1manager_1_1Manager_ad26dad0553c0e6936acbedba79b38bda}{elapsed} (self)
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a79300fdc4b141009a2c34648b566f216}\label{classelma_1_1api_1_1manager_1_1Manager_a79300fdc4b141009a2c34648b566f216}} 
-def {\bfseries watch} (self, event\+\_\+name, handler)
-\item 
-\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a8c842ef67392a11900ce089e05b23c58}\label{classelma_1_1api_1_1manager_1_1Manager_a8c842ef67392a11900ce089e05b23c58}} 
-def {\bfseries emit} (self, event)
-\item 
-\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a4e451c5cd548a0086536fa9c990b338e}\label{classelma_1_1api_1_1manager_1_1Manager_a4e451c5cd548a0086536fa9c990b338e}} 
-def {\bfseries all} (self, f)
-\item 
-\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a724e1c80f53aff3430bc465a5671ddee}\label{classelma_1_1api_1_1manager_1_1Manager_a724e1c80f53aff3430bc465a5671ddee}} 
-def {\bfseries init} (self)
-\item 
-\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a7e9916576b109e0d633c55e3854d1b78}\label{classelma_1_1api_1_1manager_1_1Manager_a7e9916576b109e0d633c55e3854d1b78}} 
-def {\bfseries start} (self)
-\item 
-\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a0feb4a517ab5840dcb6d8e15d33f22be}\label{classelma_1_1api_1_1manager_1_1Manager_a0feb4a517ab5840dcb6d8e15d33f22be}} 
-def {\bfseries stop} (self)
-\item 
-\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_acb942259598dffdb074bea5171f0e2e9}\label{classelma_1_1api_1_1manager_1_1Manager_acb942259598dffdb074bea5171f0e2e9}} 
-def {\bfseries update} (self)
-\item 
-\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a241f798dcfb0cda2a47d744d8713c456}\label{classelma_1_1api_1_1manager_1_1Manager_a241f798dcfb0cda2a47d744d8713c456}} 
-def {\bfseries run} (self, runtime)
-\item 
+def \hyperlink{classelma_1_1api_1_1manager_1_1Manager_a79300fdc4b141009a2c34648b566f216}{watch} (self, event\+\_\+name, handler)
+\begin{DoxyCompactList}\small\item\em Event Interface. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1manager_1_1Manager_a8c842ef67392a11900ce089e05b23c58}{emit} (self, event)
+\begin{DoxyCompactList}\small\item\em Emit an event associated with a name. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1manager_1_1Manager_a4e451c5cd548a0086536fa9c990b338e}{all} (self, f)
+\begin{DoxyCompactList}\small\item\em Apply a function to all processes. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1manager_1_1Manager_a724e1c80f53aff3430bc465a5671ddee}{init} (self)
+\begin{DoxyCompactList}\small\item\em Initialize all processes. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1manager_1_1Manager_a7e9916576b109e0d633c55e3854d1b78}{start} (self)
+\begin{DoxyCompactList}\small\item\em Start all processes. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1manager_1_1Manager_a0feb4a517ab5840dcb6d8e15d33f22be}{stop} (self)
+\begin{DoxyCompactList}\small\item\em Stop all processes. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1manager_1_1Manager_acb942259598dffdb074bea5171f0e2e9}{update} (self)
+\begin{DoxyCompactList}\small\item\em Update all processes if enough time has passed. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1manager_1_1Manager_a241f798dcfb0cda2a47d744d8713c456}{run} (self, runtime)
+\begin{DoxyCompactList}\small\item\em Run the manager for the specified amount of time. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_ab077b5cf1492213bc057f6a19fc78950}\label{classelma_1_1api_1_1manager_1_1Manager_ab077b5cf1492213bc057f6a19fc78950}} 
 def {\bfseries get\+\_\+milliseconds} (self, duration)
 \end{DoxyCompactItemize}
@@ -49,6 +46,120 @@ def {\bfseries get\+\_\+milliseconds} (self, duration)
 {\bfseries event\+\_\+handlers}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+The \hyperlink{classelma_1_1api_1_1manager_1_1Manager}{Manager} class which manages the processes. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a4e451c5cd548a0086536fa9c990b338e}\label{classelma_1_1api_1_1manager_1_1Manager_a4e451c5cd548a0086536fa9c990b338e}} 
+\index{elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}!all@{all}}
+\index{all@{all}!elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}}
+\subsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily def elma.\+api.\+manager.\+Manager.\+all (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{f }\end{DoxyParamCaption})}
+
+
+
+Apply a function to all processes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The function to apply. It should take a reference to a process and return void. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_ad26dad0553c0e6936acbedba79b38bda}\label{classelma_1_1api_1_1manager_1_1Manager_ad26dad0553c0e6936acbedba79b38bda}} 
+\index{elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}}
+\subsubsection{\texorpdfstring{elapsed()}{elapsed()}}
+{\footnotesize\ttfamily def elma.\+api.\+manager.\+Manager.\+elapsed (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Getter. 
+
+\begin{DoxyReturn}{Returns}
+The duration of time since the manager was most recently started 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a8c842ef67392a11900ce089e05b23c58}\label{classelma_1_1api_1_1manager_1_1Manager_a8c842ef67392a11900ce089e05b23c58}} 
+\index{elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}!emit@{emit}}
+\index{emit@{emit}!elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}}
+\subsubsection{\texorpdfstring{emit()}{emit()}}
+{\footnotesize\ttfamily def elma.\+api.\+manager.\+Manager.\+emit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+
+
+
+Emit an event associated with a name. 
+
+Typically, a process would emit events in its \hyperlink{classelma_1_1api_1_1manager_1_1Manager_acb942259598dffdb074bea5171f0e2e9}{update()} method using something like the following code" 
+\begin{DoxyCode}
+emit(Event(\textcolor{stringliteral}{"name"}, value));
+\end{DoxyCode}
+ where value is any jsonable value. For example, you can write 
+\begin{DoxyCode}
+emit(Event(\textcolor{stringliteral}{"velocity"}, 3.41));
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em event} & The Event to be emitted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a724e1c80f53aff3430bc465a5671ddee}\label{classelma_1_1api_1_1manager_1_1Manager_a724e1c80f53aff3430bc465a5671ddee}} 
+\index{elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}!init@{init}}
+\index{init@{init}!elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily def elma.\+api.\+manager.\+Manager.\+init (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Initialize all processes. 
+
+Usually called before \hyperlink{classelma_1_1api_1_1manager_1_1Manager_a241f798dcfb0cda2a47d744d8713c456}{run()} \mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a241f798dcfb0cda2a47d744d8713c456}\label{classelma_1_1api_1_1manager_1_1Manager_a241f798dcfb0cda2a47d744d8713c456}} 
+\index{elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}!run@{run}}
+\index{run@{run}!elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def elma.\+api.\+manager.\+Manager.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{runtime }\end{DoxyParamCaption})}
+
+
+
+Run the manager for the specified amount of time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & desired amount of time to run \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a7e9916576b109e0d633c55e3854d1b78}\label{classelma_1_1api_1_1manager_1_1Manager_a7e9916576b109e0d633c55e3854d1b78}} 
+\index{elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}!start@{start}}
+\index{start@{start}!elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily def elma.\+api.\+manager.\+Manager.\+start (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Start all processes. 
+
+Usually not called directly. \mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_a0feb4a517ab5840dcb6d8e15d33f22be}\label{classelma_1_1api_1_1manager_1_1Manager_a0feb4a517ab5840dcb6d8e15d33f22be}} 
+\index{elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}!stop@{stop}}
+\index{stop@{stop}!elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily def elma.\+api.\+manager.\+Manager.\+stop (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Stop all processes. 
+
+Usually not called directly. \mbox{\Hypertarget{classelma_1_1api_1_1manager_1_1Manager_acb942259598dffdb074bea5171f0e2e9}\label{classelma_1_1api_1_1manager_1_1Manager_acb942259598dffdb074bea5171f0e2e9}} 
+\index{elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}!update@{update}}
+\index{update@{update}!elma\+::api\+::manager\+::\+Manager@{elma\+::api\+::manager\+::\+Manager}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def elma.\+api.\+manager.\+Manager.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Update all processes if enough time has passed. 
+
+Usually not called directly. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

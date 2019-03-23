@@ -1,5 +1,10 @@
 \hypertarget{classelma_1_1api_1_1state_1_1State}{}\section{elma.\+api.\+state.\+State Class Reference}
 \label{classelma_1_1api_1_1state_1_1State}\index{elma.\+api.\+state.\+State@{elma.\+api.\+state.\+State}}
+
+
+A class which represents a \hyperlink{classelma_1_1api_1_1state_1_1State}{State} in the Finite \hyperlink{classelma_1_1api_1_1state_1_1State}{State} Machine.  
+
+
 Inheritance diagram for elma.\+api.\+state.\+State\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,23 +15,84 @@ Inheritance diagram for elma.\+api.\+state.\+State\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classelma_1_1api_1_1state_1_1State_a527faccc6a4e00fff27b66ac685a2dbb}\label{classelma_1_1api_1_1state_1_1State_a527faccc6a4e00fff27b66ac685a2dbb}} 
-def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, name=\char`\"{}unnamed state\char`\"{})
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classelma_1_1api_1_1state_1_1State_af557d974acb64b3cd0b6bc687bb1658a}{name}=\char`\"{}unnamed state\char`\"{})
 \item 
-\mbox{\Hypertarget{classelma_1_1api_1_1state_1_1State_af557d974acb64b3cd0b6bc687bb1658a}\label{classelma_1_1api_1_1state_1_1State_af557d974acb64b3cd0b6bc687bb1658a}} 
-def {\bfseries name} (self)
+def \hyperlink{classelma_1_1api_1_1state_1_1State_af557d974acb64b3cd0b6bc687bb1658a}{name} (self)
 \item 
-\mbox{\Hypertarget{classelma_1_1api_1_1state_1_1State_aad456a6f35fb49f1e1702eac0954ed2c}\label{classelma_1_1api_1_1state_1_1State_aad456a6f35fb49f1e1702eac0954ed2c}} 
-def {\bfseries id} (self)
+def \hyperlink{classelma_1_1api_1_1state_1_1State_aad456a6f35fb49f1e1702eac0954ed2c}{id} (self)
 \item 
-\mbox{\Hypertarget{classelma_1_1api_1_1state_1_1State_a9faa0f15ba6f380e9815554cdbfd586d}\label{classelma_1_1api_1_1state_1_1State_a9faa0f15ba6f380e9815554cdbfd586d}} 
-def {\bfseries entry} (self, event)
-\item 
+def \hyperlink{classelma_1_1api_1_1state_1_1State_a9faa0f15ba6f380e9815554cdbfd586d}{entry} (self, event)
+\begin{DoxyCompactList}\small\item\em A method that derived instances should define. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1state_1_1State_a67235fad4e69aa8c21ec26eae249e01d}{during} (self, event)
+\begin{DoxyCompactList}\small\item\em A method that derived instances should define. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1state_1_1State_ad57604af6fe62f311bc073cf027ea552}{exit} (self, event)
+\begin{DoxyCompactList}\small\item\em A method that derived instances should define. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class which represents a \hyperlink{classelma_1_1api_1_1state_1_1State}{State} in the Finite \hyperlink{classelma_1_1api_1_1state_1_1State}{State} Machine. 
+
+
+
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classelma_1_1api_1_1state_1_1State_a67235fad4e69aa8c21ec26eae249e01d}\label{classelma_1_1api_1_1state_1_1State_a67235fad4e69aa8c21ec26eae249e01d}} 
-def {\bfseries during} (self, event)
-\item 
+\index{elma\+::api\+::state\+::\+State@{elma\+::api\+::state\+::\+State}!during@{during}}
+\index{during@{during}!elma\+::api\+::state\+::\+State@{elma\+::api\+::state\+::\+State}}
+\subsubsection{\texorpdfstring{during()}{during()}}
+{\footnotesize\ttfamily def elma.\+api.\+state.\+State.\+during (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+
+
+
+A method that derived instances should define. 
+
+It is called repeatedly by the update() method of the containing State\+Machine when the state is active. \mbox{\Hypertarget{classelma_1_1api_1_1state_1_1State_a9faa0f15ba6f380e9815554cdbfd586d}\label{classelma_1_1api_1_1state_1_1State_a9faa0f15ba6f380e9815554cdbfd586d}} 
+\index{elma\+::api\+::state\+::\+State@{elma\+::api\+::state\+::\+State}!entry@{entry}}
+\index{entry@{entry}!elma\+::api\+::state\+::\+State@{elma\+::api\+::state\+::\+State}}
+\subsubsection{\texorpdfstring{entry()}{entry()}}
+{\footnotesize\ttfamily def elma.\+api.\+state.\+State.\+entry (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+
+
+
+A method that derived instances should define. 
+
+It is called when the state is entered by the state machine either when the machine starts or when a transition to the state is fired. 
+\begin{DoxyParams}{Parameters}
+{\em e} & The event that led to the transition into the state \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classelma_1_1api_1_1state_1_1State_ad57604af6fe62f311bc073cf027ea552}\label{classelma_1_1api_1_1state_1_1State_ad57604af6fe62f311bc073cf027ea552}} 
-def {\bfseries exit} (self, event)
-\end{DoxyCompactItemize}
+\index{elma\+::api\+::state\+::\+State@{elma\+::api\+::state\+::\+State}!exit@{exit}}
+\index{exit@{exit}!elma\+::api\+::state\+::\+State@{elma\+::api\+::state\+::\+State}}
+\subsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily def elma.\+api.\+state.\+State.\+exit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+
+
+
+A method that derived instances should define. 
+
+It is called just before the state is exited by the state machine when a transition from the state is fired. 
+\begin{DoxyParams}{Parameters}
+{\em e} & The event that led to the transition out of the state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classelma_1_1api_1_1state_1_1State_aad456a6f35fb49f1e1702eac0954ed2c}\label{classelma_1_1api_1_1state_1_1State_aad456a6f35fb49f1e1702eac0954ed2c}} 
+\index{elma\+::api\+::state\+::\+State@{elma\+::api\+::state\+::\+State}!id@{id}}
+\index{id@{id}!elma\+::api\+::state\+::\+State@{elma\+::api\+::state\+::\+State}}
+\subsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily def elma.\+api.\+state.\+State.\+id (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The id of the state 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classelma_1_1api_1_1state_1_1State_af557d974acb64b3cd0b6bc687bb1658a}\label{classelma_1_1api_1_1state_1_1State_af557d974acb64b3cd0b6bc687bb1658a}} 
+\index{elma\+::api\+::state\+::\+State@{elma\+::api\+::state\+::\+State}!name@{name}}
+\index{name@{name}!elma\+::api\+::state\+::\+State@{elma\+::api\+::state\+::\+State}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def elma.\+api.\+state.\+State.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The name of the state 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

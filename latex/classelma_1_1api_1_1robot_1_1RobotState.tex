@@ -1,5 +1,10 @@
 \hypertarget{classelma_1_1api_1_1robot_1_1RobotState}{}\section{elma.\+api.\+robot.\+Robot\+State Class Reference}
 \label{classelma_1_1api_1_1robot_1_1RobotState}\index{elma.\+api.\+robot.\+Robot\+State@{elma.\+api.\+robot.\+Robot\+State}}
+
+
+A class to represent different states of the \hyperlink{classelma_1_1api_1_1robot_1_1Robot}{Robot}.  
+
+
 Inheritance diagram for elma.\+api.\+robot.\+Robot\+State\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,17 +15,48 @@ Inheritance diagram for elma.\+api.\+robot.\+Robot\+State\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classelma_1_1api_1_1robot_1_1RobotState_a1499921c2c3d6b51569be5cfbcad1085}\label{classelma_1_1api_1_1robot_1_1RobotState_a1499921c2c3d6b51569be5cfbcad1085}} 
-def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, name)
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classelma_1_1api_1_1state_1_1State_af557d974acb64b3cd0b6bc687bb1658a}{name})
 \item 
-\mbox{\Hypertarget{classelma_1_1api_1_1robot_1_1RobotState_a13a44c6ec8836f2235982916b615c977}\label{classelma_1_1api_1_1robot_1_1RobotState_a13a44c6ec8836f2235982916b615c977}} 
-def {\bfseries entry} (self, event)
-\item 
-\mbox{\Hypertarget{classelma_1_1api_1_1robot_1_1RobotState_afc16183bb851de813f3269937c2360a6}\label{classelma_1_1api_1_1robot_1_1RobotState_afc16183bb851de813f3269937c2360a6}} 
-def {\bfseries during} (self)
-\item 
+def \hyperlink{classelma_1_1api_1_1robot_1_1RobotState_a13a44c6ec8836f2235982916b615c977}{entry} (self, event)
+\begin{DoxyCompactList}\small\item\em A method that derived instances should define. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1robot_1_1RobotState_afc16183bb851de813f3269937c2360a6}{during} (self)
+\begin{DoxyCompactList}\small\item\em A method that derived instances should define. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classelma_1_1api_1_1robot_1_1RobotState_aa9054b608060dd161e4a18f194f62689}\label{classelma_1_1api_1_1robot_1_1RobotState_aa9054b608060dd161e4a18f194f62689}} 
 def {\bfseries exit} (self, event)
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to represent different states of the \hyperlink{classelma_1_1api_1_1robot_1_1Robot}{Robot}. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classelma_1_1api_1_1robot_1_1RobotState_afc16183bb851de813f3269937c2360a6}\label{classelma_1_1api_1_1robot_1_1RobotState_afc16183bb851de813f3269937c2360a6}} 
+\index{elma\+::api\+::robot\+::\+Robot\+State@{elma\+::api\+::robot\+::\+Robot\+State}!during@{during}}
+\index{during@{during}!elma\+::api\+::robot\+::\+Robot\+State@{elma\+::api\+::robot\+::\+Robot\+State}}
+\subsubsection{\texorpdfstring{during()}{during()}}
+{\footnotesize\ttfamily def elma.\+api.\+robot.\+Robot\+State.\+during (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+A method that derived instances should define. 
+
+It is called repeatedly by the update() method of the containing State\+Machine when the state is active. \mbox{\Hypertarget{classelma_1_1api_1_1robot_1_1RobotState_a13a44c6ec8836f2235982916b615c977}\label{classelma_1_1api_1_1robot_1_1RobotState_a13a44c6ec8836f2235982916b615c977}} 
+\index{elma\+::api\+::robot\+::\+Robot\+State@{elma\+::api\+::robot\+::\+Robot\+State}!entry@{entry}}
+\index{entry@{entry}!elma\+::api\+::robot\+::\+Robot\+State@{elma\+::api\+::robot\+::\+Robot\+State}}
+\subsubsection{\texorpdfstring{entry()}{entry()}}
+{\footnotesize\ttfamily def elma.\+api.\+robot.\+Robot\+State.\+entry (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+
+
+
+A method that derived instances should define. 
+
+It is called when the state is entered by the state machine either when the machine starts or when a transition to the state is fired. 
+\begin{DoxyParams}{Parameters}
+{\em e} & The event that led to the transition into the state \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
