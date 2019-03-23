@@ -1,0 +1,87 @@
+\hypertarget{classelma_1_1api_1_1event_1_1Event}{}\section{elma.\+api.\+event.\+Event Class Reference}
+\label{classelma_1_1api_1_1event_1_1Event}\index{elma.\+api.\+event.\+Event@{elma.\+api.\+event.\+Event}}
+
+
+Events that can be emitted, watched, and responded to with event handlers.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classelma_1_1api_1_1event_1_1Event_aed8d4b5c4d860cfd15b66cf7137395a3}\label{classelma_1_1api_1_1event_1_1Event_aed8d4b5c4d860cfd15b66cf7137395a3}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classelma_1_1api_1_1event_1_1Event_aff9b51b4633b58b32e4cb04d9fca568d}{name}=None, \hyperlink{classelma_1_1api_1_1event_1_1Event_a26e3c222b0421cd70d66041466e0b189}{value}=0)
+\item 
+def \hyperlink{classelma_1_1api_1_1event_1_1Event_aff9b51b4633b58b32e4cb04d9fca568d}{name} (self)
+\begin{DoxyCompactList}\small\item\em return the name of the event \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1event_1_1Event_a5912a8957bf49373f95a5646c861a905}{propagate} (self)
+\begin{DoxyCompactList}\small\item\em Determine whether the event will propagate to the next event handlert. \end{DoxyCompactList}\item 
+def \hyperlink{classelma_1_1api_1_1event_1_1Event_a2b670f52655e83d9ab9f80385f5917ff}{stop\+\_\+propagation} (self)
+\begin{DoxyCompactList}\small\item\em Prevent the event from propagating to the next event handler. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classelma_1_1api_1_1event_1_1Event_a5b44cfed288e84f52d13b9082fe09b5c}\label{classelma_1_1api_1_1event_1_1Event_a5b44cfed288e84f52d13b9082fe09b5c}} 
+def {\bfseries reset} (self)
+\item 
+\mbox{\Hypertarget{classelma_1_1api_1_1event_1_1Event_a31067ddfc1b3a5584799255db0405efb}\label{classelma_1_1api_1_1event_1_1Event_a31067ddfc1b3a5584799255db0405efb}} 
+def \hyperlink{classelma_1_1api_1_1event_1_1Event_a31067ddfc1b3a5584799255db0405efb}{empty} (self)
+\begin{DoxyCompactList}\small\item\em Determine whether the event has no data return Whether the event has no data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classelma_1_1api_1_1event_1_1Event_a26e3c222b0421cd70d66041466e0b189}\label{classelma_1_1api_1_1event_1_1Event_a26e3c222b0421cd70d66041466e0b189}} 
+def \hyperlink{classelma_1_1api_1_1event_1_1Event_a26e3c222b0421cd70d66041466e0b189}{value} (self)
+\begin{DoxyCompactList}\small\item\em Get the data value associated with an event return The value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Events that can be emitted, watched, and responded to with event handlers. 
+
+Events are constructed with a jsonable value, as in 
+\begin{DoxyCode}
+Event(3.14);
+Event(\textcolor{stringliteral}{"hello world"});
+Event(\{1,2,3\});
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classelma_1_1api_1_1event_1_1Event_aff9b51b4633b58b32e4cb04d9fca568d}\label{classelma_1_1api_1_1event_1_1Event_aff9b51b4633b58b32e4cb04d9fca568d}} 
+\index{elma\+::api\+::event\+::\+Event@{elma\+::api\+::event\+::\+Event}!name@{name}}
+\index{name@{name}!elma\+::api\+::event\+::\+Event@{elma\+::api\+::event\+::\+Event}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def elma.\+api.\+event.\+Event.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+return the name of the event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classelma_1_1api_1_1event_1_1Event_a5912a8957bf49373f95a5646c861a905}\label{classelma_1_1api_1_1event_1_1Event_a5912a8957bf49373f95a5646c861a905}} 
+\index{elma\+::api\+::event\+::\+Event@{elma\+::api\+::event\+::\+Event}!propagate@{propagate}}
+\index{propagate@{propagate}!elma\+::api\+::event\+::\+Event@{elma\+::api\+::event\+::\+Event}}
+\subsubsection{\texorpdfstring{propagate()}{propagate()}}
+{\footnotesize\ttfamily def elma.\+api.\+event.\+Event.\+propagate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Determine whether the event will propagate to the next event handlert. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classelma_1_1api_1_1event_1_1Event_a2b670f52655e83d9ab9f80385f5917ff}\label{classelma_1_1api_1_1event_1_1Event_a2b670f52655e83d9ab9f80385f5917ff}} 
+\index{elma\+::api\+::event\+::\+Event@{elma\+::api\+::event\+::\+Event}!stop\+\_\+propagation@{stop\+\_\+propagation}}
+\index{stop\+\_\+propagation@{stop\+\_\+propagation}!elma\+::api\+::event\+::\+Event@{elma\+::api\+::event\+::\+Event}}
+\subsubsection{\texorpdfstring{stop\+\_\+propagation()}{stop\_propagation()}}
+{\footnotesize\ttfamily def elma.\+api.\+event.\+Event.\+stop\+\_\+propagation (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Prevent the event from propagating to the next event handler. 
+
+Typically called within an event handler to prevent an subsequent events that are watching the same event from firing. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+elma/api/event.\+py\end{DoxyCompactItemize}

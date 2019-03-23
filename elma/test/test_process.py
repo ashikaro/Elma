@@ -1,8 +1,10 @@
 from elma.api.process import Process
 from elma.api.event import Event
-from elma.api.manager import Manager
-import unittest
+## @package elma.test.test_process
+#  This module contains the class definition for TestProcess.
 
+## This is a test process class inheriting the Process class
+#  to test the working of the ELMA process APIs.
 class TestProcess(Process):
 
     def __init__(self, name=None, status=None, manager=None):
@@ -24,7 +26,6 @@ class TestProcess(Process):
         print("empty start implementation in the TestProcess")
 
     def update(self):
-        print("in test process update method")
         print("emitting hello event\n")
         self.emit(Event("hello", "world"))
         print("emitting pi event\n")

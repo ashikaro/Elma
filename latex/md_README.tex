@@ -1,0 +1,138 @@
+P\+E\+L\+MA -\/ Python Event Loop Manager
+
+\section*{Project Goals}
+
+
+\begin{DoxyItemize}
+\item In this project, i will implement a fully functioning Event Loop Manager(\+E\+L\+M\+A) Library in python.
+\item Python applications can leverage E\+L\+MA interface to develop embedded applications and specifically for running event loops.
+\item We will use events for Interprocess communication.
+\end{DoxyItemize}
+
+I will consider this project to be successful if\+:
+\begin{DoxyItemize}
+\item A Python client can use this library to define processes.
+\item A Python client can use this library to schedule processes to run at a certain frequency.
+\item A Python client use this library communicate between processes via events.
+\item A Python client can build a Finite State Machine using P\+E\+L\+MA library.
+\end{DoxyItemize}
+
+We will build a simple test robot finite state machine using the P\+E\+L\+MA library.
+
+\section*{Resources}
+
+
+\begin{DoxyItemize}
+\item Pluralsight course Python Fundamentals
+\item Py\+Charm I\+DE for Python
+\item Will use C++ elma A\+PI\textquotesingle{}s used in this course as a reference
+\item Unit Test for hw\+\_\+7, for building test robot finite state machine.
+\end{DoxyItemize}
+
+\section*{Milestones}
+
+$\ast$\+No changes to the milestones. Going as per the plan.
+\begin{DoxyEnumerate}
+\item Requirement Analysis, design, scoping by 12th March 2019
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Implement core Elma A\+P\+Is(\+Process,\+Manager) in python by 13th March 2019
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Implement A\+PI\textquotesingle{}s for F\+SM.(State,State Machine) in python by 16th March 2019
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Implement python client using elma to test a simple robot F\+SM by 18th March 2019
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Documentation using Doxygen generated A\+PI descriptions for all classes and methods by 20th March 2019
+\end{DoxyEnumerate}
+
+\section*{Current Accomplishments}
+
+
+\begin{DoxyEnumerate}
+\item Completed requirement analysis, design in python and scoping
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Dockerized the python Elma App
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Implemented some of the the core Elma A\+P\+Is -\/ Manager, Process and Event classes in Python
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Added a test for some of the core A\+P\+Is in Process and Manager
+\end{DoxyEnumerate}
+
+\section*{Code implemented so far}
+
+
+\begin{DoxyEnumerate}
+\item Created a new package elma.\+api to hold all the E\+L\+MA classes.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item We have implemented Manger, Process, Event classes in event.\+py, manager.\+py and process.\+py
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Test has been added under the package elma.\+test
+\end{DoxyEnumerate}
+
+\subsection*{Installation }
+
+\begin{DoxyVerb}git clone https://github.com/ashikaro/Elma.git
+cd Elma
+make build
+make run
+\end{DoxyVerb}
+
+
+\subsection*{Execution }
+
+To run the test process once in the container, type \begin{DoxyVerb}python -m unittest
+\end{DoxyVerb}
+
+
+\subsection*{Testing }
+
+To run tests, do 
+\begin{DoxyCode}
+python -m unittest
+\end{DoxyCode}
+
+
+\subsection*{Architecture }
+
+Describe how your project was designed, what choices you made, how things are organized, etc.
+\begin{DoxyEnumerate}
+\item This project is designed to work as an E\+L\+MA python library which can be published to a artifactory and embedded appications can add this as a dependency to incorporate E\+L\+MA into their system.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item All the core E\+L\+MA classes Manger, Process, Event behave functionally the same way as the C++ E\+L\+MA we have built in this class.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item As a proof concept to test if E\+L\+MA can be used in Embedded apps, we have implemented a simple robot which leverage the E\+L\+MA A\+P\+Is to perform simple operations similar to the assignment 7 \subsection*{Results }
+\end{DoxyEnumerate}
+
+Describe the results of testing and running your code. Include visuals when possible.
+\begin{DoxyEnumerate}
+\item We have written a test for core functionality of the process.
+\end{DoxyEnumerate}
+
+\subsection*{Acknowledgements }
+
+Mention anyone who helped you and how.
+
+\subsection*{References }
+
+List all libraries, articles, stack overflow answers, etc. that you used to get your code working.
+
+Tests not running \begin{DoxyVerb}https://stackoverflow.com/questions/43957860/python-unittest-ran-0-tests-in-0-000s
+https://stackoverflow.com/questions/7562775/deriving-a-class-from-testcase-throws-two-errors 
+\end{DoxyVerb}
+
+
+Docker not able to bring bash shell up. Instead used sh \href{https://stackoverflow.com/questions/27959011/why-does-docker-say-it-cant-execute-bash}{\tt https\+://stackoverflow.\+com/questions/27959011/why-\/does-\/docker-\/say-\/it-\/cant-\/execute-\/bash}
+
+Docker image for Python reference \href{https://blog.realkinetic.com/building-minimal-docker-containers-for-python-applications-37d0272c52f3}{\tt https\+://blog.\+realkinetic.\+com/building-\/minimal-\/docker-\/containers-\/for-\/python-\/applications-\/37d0272c52f3}
+
+Python time in milliseconds \href{https://blog.realkinetic.com/building-minimal-docker-containers-for-python-applications-37d0272c52f3}{\tt https\+://blog.\+realkinetic.\+com/building-\/minimal-\/docker-\/containers-\/for-\/python-\/applications-\/37d0272c52f3} 

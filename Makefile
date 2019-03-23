@@ -10,3 +10,6 @@ rm:
 test:
 	python -m unittest
 
+docs:
+	doxygen elmadocs.config
+

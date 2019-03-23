@@ -1,0 +1,240 @@
+\href{https://github.com/ashikaro/Elma}{\tt P\+E\+L\+MA} is a python event loop manager which can be used by embedded and reactive systems application in Python.
+
+The source code for this project is available here \href{https://github.com/ashikaro/Elma}{\tt github}.
+
+\subsection*{Installation }
+
+\begin{DoxyVerb}git clone https://github.com/ashikaro/Elma.git
+cd Elma
+make build
+make run
+make docs
+\end{DoxyVerb}
+
+
+\subsection*{Execution }
+
+To run the test process in the container, type \begin{DoxyVerb}python -m unittest
+or 
+make test
+\end{DoxyVerb}
+
+
+This runs the unit tests we have written for testing a simple process and the test robot.
+
+\subsection*{Testing }
+
+To run tests, do 
+\begin{DoxyCode}
+make test
+\end{DoxyCode}
+
+
+\subsection*{Architecture }
+
+
+\begin{DoxyEnumerate}
+\item This project is designed to work as an E\+L\+MA python library which can be published to an artifactory and embedded applications can add this as a dependency to incorporate E\+L\+MA into their system.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item All the core E\+L\+MA classes Manger, Process, Event behave functionally the same way as the C++ E\+L\+MA we have built in this class.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item As a proof concept to test if E\+L\+MA can be used in Embedded apps, we have implemented a simple robot which leverage the E\+L\+MA A\+P\+Is to perform simple operations similar to the assignment 7
+\end{DoxyEnumerate}
+
+\subsection*{Challenges }
+
+
+\begin{DoxyEnumerate}
+\item Understanding object oriented nuances specific to Python which is a lot different from C++.
+\item Steep learning curve considering my inexperience in Python and object oriented languages in general.
+\item Implementing virtual methods where we want base class(process) to have no implementation and expect child classes to implement.
+\item Python does not have multi argument constructors.
+\item Using python closures with nested function for setting up event handling for all the transitions(State\+Machine\textquotesingle{}s init)
+\item Writing lambdas in python for event handling.
+\end{DoxyEnumerate}
+
+\subsection*{Results }
+
+
+\begin{DoxyEnumerate}
+\item We have written tests for testing Core E\+L\+MA A\+P\+Is and Robot Finite State Machine. Here is the log of the run\+: 
+\begin{DoxyCode}
+Running tests for core ELMA APIs Using ELMA Manager to test: 1. Initializing a process 2. Scheduling a
+       process  3. Updating a process 4. Event handler methods watch and emit
+<elma.test.test\_process.TestProcess object at 0x7f329ad3efd0>
+watching for hello
+watching for pi
+emitting hello event
+
+emitting event hello
+emitting event hello
+emitting pi event
+
+emitting event pi
+emitting event pi
+
+Running first set of tests for python client Robot Leveraging ELMA APIs.
+Initializing Robot States and making sure states get unique IDs
+Id for state Recharge is 0
+Id for state Wander is 1
+Id for state Find Recharge Station is 2
+Id for state Evade is 3
+Id for state Make Noise is 4
+adding transition for event found recharge station from Find Recharge Station to Recharge
+adding transition for event battery full from Recharge to Wander
+adding transition for event battery low from Wander to Find Recharge Station
+adding transition for event battery low from Evade to Find Recharge Station
+adding transition for event start from Wander to Wander
+adding transition for event reset from Make Noise to Wander
+adding transition for event reset from Evade to Make Noise
+adding transition for event intruder detected from Wander to Make Noise
+adding transition for event proximity warning from Make Noise to Evade
+<elma.api.robot.Robot object at 0x7f329ad3ee48>
+watching for found recharge station
+watching for battery full
+watching for battery low
+watching for battery low
+watching for start
+watching for reset
+watching for reset
+watching for intruder detected
+watching for proximity warning
+<elma.api.robot.Robot object at 0x7f329ad3ee48>
+calling entry method of Wander
+emitting event start
+calling exit method of Wander
+calling entry method of Wander
+Wander
+emitting event intruder detected
+emitting event intruder detected
+calling exit method of Wander
+calling entry method of Make Noise
+Make Noise
+emitting event proximity warning
+calling exit method of Make Noise
+calling entry method of Evade
+Evade
+emitting event battery full
+Evade
+Running First set tests for python client Robot Leveraging ELMA APIs.
+Initializing Robot States and making sure states get unique IDs
+Id for state Recharge is 5
+Id for state Wander is 6
+Id for state Find Recharge Station is 7
+Id for state Evade is 8
+Id for state Make Noise is 9
+adding transition for event found recharge station from Find Recharge Station to Recharge
+adding transition for event battery full from Recharge to Wander
+adding transition for event battery low from Wander to Find Recharge Station
+adding transition for event battery low from Evade to Find Recharge Station
+adding transition for event start from Wander to Wander
+adding transition for event reset from Make Noise to Wander
+adding transition for event reset from Evade to Make Noise
+adding transition for event intruder detected from Wander to Make Noise
+adding transition for event proximity warning from Make Noise to Evade
+<elma.api.robot.Robot object at 0x7f329ad02be0>
+watching for found recharge station
+watching for battery full
+watching for battery low
+watching for battery low
+watching for start
+watching for reset
+watching for reset
+watching for intruder detected
+watching for proximity warning
+<elma.api.robot.Robot object at 0x7f329ad02be0>
+calling entry method of Wander
+Wander
+emitting event battery low
+emitting event battery low
+calling exit method of Wander
+calling entry method of Find Recharge Station
+Find Recharge Station
+emitting event found recharge station
+calling exit method of Find Recharge Station
+calling entry method of Recharge
+Recharge
+emitting event battery full
+calling exit method of Recharge
+calling entry method of Wander
+Wander
+emitting event intruder detected
+calling exit method of Wander
+calling entry method of Make Noise
+Make Noise
+emitting event reset
+calling exit method of Make Noise
+calling entry method of Wander
+Wander
+emitting event intruder detected
+calling exit method of Wander
+calling entry method of Make Noise
+Make Noise
+emitting event proximity warning
+calling exit method of Make Noise
+calling entry method of Evade
+Evade
+emitting event battery low
+calling exit method of Evade
+calling entry method of Find Recharge Station
+Find Recharge Station
+.
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK
+\end{DoxyCode}
+
+\end{DoxyEnumerate}
+
+\section*{Milestones}
+
+$\ast$\+No changes to the milestones. Going as per the plan.
+\begin{DoxyEnumerate}
+\item Requirement Analysis, design, scoping by 12th March 2019
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Implement core Elma A\+P\+Is(\+Process,\+Manager) in python by 13th March 2019
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Implement A\+PI\textquotesingle{}s for F\+SM.(State,State Machine) in python by 16th March 2019
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Implement python client using elma to test a simple robot F\+SM by 18th March 2019
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Documentation using Doxygen generated A\+PI descriptions for all classes and methods by 20th March 2019
+\end{DoxyEnumerate}
+
+\section*{Current Accomplishments}
+
+
+\begin{DoxyEnumerate}
+\item Accomplished all the milestones.
+\end{DoxyEnumerate}
+
+\section*{Resources}
+
+
+\begin{DoxyItemize}
+\item Pluralsight course Python Fundamentals.
+\item Py\+Charm I\+DE for Python.
+\item Will use C++ elma A\+PI\textquotesingle{}s used in this course as a reference.
+\item Unit Tests for hw\+\_\+7, for building test robot finite state machine.
+\end{DoxyItemize}
+
+\subsection*{Acknowledgements }
+
+\subsection*{References }
+
+
+\begin{DoxyEnumerate}
+\item Tests not running -\/ \href{https://stackoverflow.com/questions/43957860/python-unittest-ran-0-tests-in-0-000s}{\tt https\+://stackoverflow.\+com/questions/43957860/python-\/unittest-\/ran-\/0-\/tests-\/in-\/0-\/000s} \href{https://stackoverflow.com/questions/7562775/deriving-a-class-from-testcase-throws-two-errors}{\tt https\+://stackoverflow.\+com/questions/7562775/deriving-\/a-\/class-\/from-\/testcase-\/throws-\/two-\/errors}
+\item Docker not able to bring bash shell up. Instead used sh \href{https://stackoverflow.com/questions/27959011/why-does-docker-say-it-cant-execute-bash}{\tt https\+://stackoverflow.\+com/questions/27959011/why-\/does-\/docker-\/say-\/it-\/cant-\/execute-\/bash}
+\item Docker image for Python reference \href{https://blog.realkinetic.com/building-minimal-docker-containers-for-python-applications-37d0272c52f3}{\tt https\+://blog.\+realkinetic.\+com/building-\/minimal-\/docker-\/containers-\/for-\/python-\/applications-\/37d0272c52f3}
+\item Python time in milliseconds \href{https://blog.realkinetic.com/building-minimal-docker-containers-for-python-applications-37d0272c52f3}{\tt https\+://blog.\+realkinetic.\+com/building-\/minimal-\/docker-\/containers-\/for-\/python-\/applications-\/37d0272c52f3}
+\item Declaring static variables \href{https://www.geeksforgeeks.org/g-fact-34-class-or-static-variables-in-python/}{\tt https\+://www.\+geeksforgeeks.\+org/g-\/fact-\/34-\/class-\/or-\/static-\/variables-\/in-\/python/}
+\item Inner functions and closures for event handling \href{https://realpython.com/inner-functions-what-are-they-good-for/}{\tt https\+://realpython.\+com/inner-\/functions-\/what-\/are-\/they-\/good-\/for/} 
+\end{DoxyEnumerate}

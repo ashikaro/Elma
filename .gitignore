@@ -7,6 +7,16 @@
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea/inspectionProfiles/Project_Default.xml
+.idea/vcs.xml
+.idea/.name
+.idea/encodings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/markdown-navigator.xml
+.idea/markdown-navigator/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/pelma.iml
 
 # Generated files
 .idea/**/contentModel.xml
